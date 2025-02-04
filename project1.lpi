@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="False"/>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="project1"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="bot"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="respuestas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Respuestas"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="preguntas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PREGUNTAS"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MENU"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="llenado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Llenado"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="bot.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="archivo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ARCHIVO"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="respuestas_menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RESPUESTAS_MENU"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="vyp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VyP"/>
+      </Unit8>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="project1"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
