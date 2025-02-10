@@ -10,40 +10,43 @@ USES
 PROCEDURE MENU1 (VAR ARCH:T_ARCHIVO);
 
 IMPLEMENTATION
+
 PROCEDURE MENU1 (VAR ARCH:T_ARCHIVO);
 VAR
  OPCION,resp:string;
 BEGIN
-     ABRIR(ARCH);
+     abrir(arch);
+     preg_resp(arch);
      BIENVENIDA();
+     //MOSTRARPANTALLAINICIO;
      REPEAT
      BEGIN
           CLRSCR;
           TEXTCOLOR(green);
-          GOTOXY(35,7);
+          GOTOXY(35,10);
             WRITELN('  MENÚ DE OPCIONES DEL ASISTENTE VIRTUAL    ');
           TEXTCOLOR(WHITE);
-          GOTOXY(36,10);
-            WRITELN('   1- INICIAR ASISTENTE VIRTUAL            ');
-            GOTOXY(36,10);
+          GOTOXY(36,13);
+            WRITELN('   1 -> INICIAR ASISTENTE VIRTUAL            ');
+            GOTOXY(36,13);
             TEXTCOLOR(lightblue);
             WRITELN('*');
-          GOTOXY(36,12);
+          GOTOXY(36,15);
           TEXTCOLOR(WHITE);
-            WRITELN('   2- CÓMO FUNCIONA EL ASISTENTE VIRTUAL   ');
-            GOTOXY(36,12);
+            WRITELN('   2 -> CÓMO FUNCIONA EL ASISTENTE VIRTUAL   ');
+            GOTOXY(36,15);
             TEXTCOLOR(lightblue);
             WRITELN('*');
-          GOTOXY(36,12);
+          GOTOXY(36,15);
           TEXTCOLOR(WHITE);
-          GOTOXY(36,14);
-            WRITELN('   0- SALIR             ');
-            GOTOXY(36,14);
+          GOTOXY(36,17);
+            WRITELN('   0 -> SALIR             ');
+            GOTOXY(36,17);
             TEXTCOLOR(lightblue);
             WRITELN('*');
-          GOTOXY(36,14);
+          GOTOXY(36,17);
           TEXTCOLOR(GREEN);
-          GOTOXY(36,18);
+          GOTOXY(36,20);
           WRITE('SELECIONE UNA OPCIÓN: ');
           textcolor(lightblue);
           READLN(OPCION);
@@ -51,7 +54,7 @@ BEGIN
           begin
           textcolor(RED);
           GOTOXY(35,22);
-          WRITELN(FALLO_RESP (resp));
+          WRITELN(FALLO_RESP ());
           textcolor(yellow);
           gotoxy(35,24);
           WRITE('VOLVERA A INTENTAR EN ');
@@ -77,9 +80,9 @@ BEGIN
          GOTOXY(30,22);
           writeln('                                                                   ');
           textcolor(GREEN);
-          gotoxy(36,18);
+          gotoxy(36,20);
           write('SELECIONE UNA OPCIÓN: ');
-          gotoxy(58,18);
+          gotoxy(58,20);
           clreol;
           textcolor(lightblue);
           readln(opcion);
